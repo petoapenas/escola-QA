@@ -1,0 +1,7 @@
+<h1>Cadastrar Aluno</h1>
+<form method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">Salvar</button>
+</form>
+<a href="{% url 'aluno_listar' %}">Voltar</a>
